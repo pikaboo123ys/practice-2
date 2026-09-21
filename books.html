@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <style>
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+        }
+
+        .card {
+            display: inline-block;
+            width: 220px;
+            margin: 15px;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 5px 5px 10px gray;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+    </nav>
+
+    <h2 style="text-align:center">All Books</h2>
+
+    <div class="card">
+        <p>Chronicles of Narnia</p>
+        <img src="narnia.jpg" width="220" height="">
+        <button onclick="buy()">Buy</button>
+    </div>
+
+    <div class="card">
+        <p>the series of unfortunate events</p>
+        <img src="unfortunate events.jpg" width="220" height="">
+        <button onclick="buy()">Buy</button>
+    </div>
+
+    <script>
+        function buy() { alert("Book Added!"); }
+    </script>
+
+</body>
+
+</html>
