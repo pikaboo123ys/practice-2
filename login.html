@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Login - Online Bookstore</title>
+
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f4f4f4;
+
+        }
+
+        nav {
+
+            background-color: #333;
+
+            padding: 15px;
+
+            text-align: center;
+
+        }
+
+        nav a {
+
+            color: white;
+
+            margin: 0 10px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+        }
+
+        .login-container {
+
+            max-width: 350px;
+
+            margin: 50px auto;
+
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 8px;
+
+            box-shadow: 5px 5px 10px gray;
+
+        }
+
+        input {
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin: 10px 0;
+
+            box-sizing: border-box;
+
+        }
+
+        button {
+
+            width: 100%;
+
+            background-color: #007bff;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px;
+
+            cursor: pointer;
+
+            border-radius: 4px;
+
+            font-size: 16px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="login-container">
+        <h2 style="text-align: center;">Account login</h2>
+        <form onsubmit="handleLogin(event)">
+            <label>Username / Email</label>
+            <input type="password" placeholder=" Enter Username" required>
+
+            <label>Password</label>
+            <input type="Password" placeholder=" Enter Password" required>
+
+            <button type="submit">login</button>
+        </form>
+    </div>
+    <script>
+        function handleLogin(e) {
+            e.preventDefault();
+            let user = document.getElementById('username').value; alert("WELCOME BACK" + user + "!")
+        }
+
+    </script>
+</body>
+
+</html>
